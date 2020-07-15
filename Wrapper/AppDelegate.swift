@@ -1,19 +1,19 @@
 //
 //  AppDelegate.swift
-//  Wrapper
+//  Activity Indicator
 //
-//  Created by Bart Bruijnesteijn on 15/07/2020.
+//  Created by Bart Bruijnesteijn on 04/07/2020.
 //
 
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor(named: "AccentColor") ?? UIColor.black]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor(named: "AccentColor") ?? UIColor.white]
+
         return true
     }
 
